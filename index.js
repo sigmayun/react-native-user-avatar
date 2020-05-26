@@ -29,6 +29,7 @@ class UserAvatar extends React.PureComponent {
       name,
       color,
       textColor = '#fff',
+      textSize = (this.props.size || 32) / 3,
       colors = defaultColors,
       size = 32,
       containerStyle,
@@ -97,6 +98,7 @@ class UserAvatar extends React.PureComponent {
           <Text
             style={{
               color: textColor,
+              fontSize: textSize,
             }}
             adjustsFontSizeToFit={true}
             maxFontSizeMultiplier={1}

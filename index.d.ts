@@ -5,6 +5,7 @@ type UserAvatarPropsType = {
   name: string
   color?: string
   textColor?: string
+  textSize?: number
   colors?: string[]
   size?: number
   containerStyle?: ViewStyle
